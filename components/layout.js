@@ -30,8 +30,10 @@ export default function Layout({ children, home }) {
       <Script
         src="https://connect.facebook.net/en_US/sdk.js"
         strategy="lazyOnload"
-        onLoad={() =>
+        onLoad={() => {
           console.log(`script loaded correctly, window.FB has been populated`)
+          console.log("You are good to go!")
+        }
         }
       />
       <header className={styles.header}>
